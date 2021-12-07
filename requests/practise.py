@@ -24,8 +24,8 @@ r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
 # POST 請求
 my_data = {'key1': 'value1', 'key2': 'value2'}
 # 具有重複鍵值的資料
-my_data2 = (('key1': 'value1'), ('key1': 'value2'))
-r = requests.post('http:httpbin.org/post', data=my_data)
+my_data2 = ({'key1': 'value1'}, {'key1': 'value2'})
+r = requests.post('http://httpbin.org/post', data=my_data)
 
 # 上傳檔案
 my_files = {'my_filename': open('my_file.docx', 'rb')}

@@ -48,3 +48,5 @@ for i in Soup.select('.r-ent > .title > a '):
     print(i.text, "\n\n")                   # 印出標題
     print('https://www.ptt.cc', end='')     # 補上不完整的網址
     print(i['href'], "\n\n")                # 讀出藏在href中的超連結網址
+
+dit = {"key"}

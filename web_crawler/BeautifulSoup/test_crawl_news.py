@@ -1,18 +1,3 @@
-import crawl_news
-import pytest
-
-
-def reporters():
-    all_reporters = []
-    for news in crawl_news.save_news:
-        all_reporters.append(news['reporter'])
-    return all_reporters
-
-def test_reporter():
-    for reporter in reporters():
-        assert len(reporter) == 3
-
-
 def parse_reporter_name(origin_text:str):
     if "記者" in origin_text:
         return origin_text.lstrip("記者").rstrip(origin_text[origin_text.find('／'):])

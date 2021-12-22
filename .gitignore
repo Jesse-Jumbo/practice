@@ -1,2 +1,3 @@
 venv/
-
+web_crawler/BeautifulSoup/.pytest_cache
+web_crawler/BeautifulSoup/youtube_crawling/.pytest_cache
